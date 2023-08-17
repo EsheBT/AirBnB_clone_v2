@@ -8,7 +8,7 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/airbnb-onepage', strict_slashes=False)
+@app.route('/airbnb-onepage/', strict_slashes=False)
 def hello_route():
     """
     Displays 'Hello HBNB!'
@@ -19,4 +19,4 @@ def hello_route():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="127.0.0.1", port=5000)
